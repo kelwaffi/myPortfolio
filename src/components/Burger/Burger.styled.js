@@ -14,7 +14,10 @@ cursor: pointer;
 padding: 0;
 z-index: 100;
 border-radius: 50%;
-position: relative;
+position: absolute;
+top: 15%;
+
+right: 10px;
 &:focus{
     outline: 0px;
 }

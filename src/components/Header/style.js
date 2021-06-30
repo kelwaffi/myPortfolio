@@ -1,8 +1,9 @@
 import styled from 'styled-components';
 
 export const HeaderWrapper = styled.header`
-
 width: 100%;
+position: relative;
+
 
 header{
   width: 90%;
@@ -14,7 +15,7 @@ header{
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-
+  position: relative;
   .nav-links-section{
     @media screen  and (max-width: 800px){
     display: none;
@@ -64,9 +65,13 @@ export const CvButton = styled.button`
 export const DropDownMenu = styled.div`
 width: 100%;
 place-items: center;
+position: absolute;
+top: 0;
+left: 0;
 height: 100vh;
 flex-direction: column;
 align-items: center;
+background-color: #0D0C1D;
 z-index: 20;
 display:  ${({ open }) => open ? 'flex' : 'none'};
 opacity:  ${({ open }) => open ? 1 : 0};
